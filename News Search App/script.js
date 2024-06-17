@@ -1,6 +1,8 @@
 const apikey='c4d277bfe41b4f6797e10d76f87bf7ff'
 
 const blogContainer = document.getElementById("blog-container");
+const searchField = document.getElementById('search-input')
+const searchButton = document.getElementById('search-btn')
 
 async function fetchrandom(){
     try{
@@ -15,6 +17,17 @@ return data.articles;
     return[]
 }
 
+searchButton.addEventListener("click", ()=>{
+    const query = searchField.ariaValueMax.trim()
+    if(query !==""){
+        try{
+
+        }catch(error){
+            console.log("error fecting news by query")
+        }
+    }
+})
+
 function displayBlogs(articles){
     blogContainer.innerHTML = ""
     articles.forEach((article)=>{
@@ -24,13 +37,17 @@ const img = document.createElement("img")
 img.src = article.urlToImage
 img.alt= article.title
 const title = document.createElement("h2")
-title.textContent = article.title
+const trunckatedTitle=article.title.length > 30? article.title.slice(0,30)+"....." : article.title;
+title.textContent = trunckatedTitle;
 const description = document.createElement("p")
 description.textContent = article.description
 
 blogCard.appendChild(img)
 blogCard.appendChild(title)
 blogCard.appendChild(description)
+blogCard.addEventListener('click',()=>{
+    window.open(article.url, "_blank")
+})
 blogContainer.appendChild(blogCard)
 
     })
@@ -44,4 +61,4 @@ displayBlogs(articles);
         console.error("Error fetching random news", error);
 
     }
-})
+})();
