@@ -1,0 +1,1 @@
+document.write("<h1>This Is For Loops Practice</h1>");
