@@ -16,9 +16,7 @@ ul li{
     list-style: none;
 }
 
-.header{
-    box-shadow: 2px 2px 2px black;
-}
+
 
 .tab-content-section{
     width: 80%;
@@ -30,4 +28,26 @@ ul li{
     align-items: center;
     justify-content: center;
     margin: 20px;
+}
+
+
+.display-none{
+    display: none;
+}
+
+#first-tab:hover{
+    border-bottom: 2px solid black;
+}
+
+#second-tab:hover{
+    border-bottom: 2px solid black;
+
+}
+
+#third-tab:hover{
+    border-bottom: 2px solid black;
+
+}#fourth-tab:hover{
+    border-bottom: 2px solid black;
+
 }

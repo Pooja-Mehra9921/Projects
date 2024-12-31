@@ -1,20 +1,25 @@
-const container = document.getElementById("container");
+const loginData = {name :"", password :""};
 
-const hideshowbtn = document.getElementById("hide-show-btn");
+const nameField = document.getElementById("namefield");
+const passwordField = document.getElementById("password");
+const submitbtn = document.getElementById("submit-btn");
 
-let ishide =false;
+nameField.addEventListener("change", handlename);
+passwordField.addEventListener("change", handlepassword);
+submitbtn.addEventListener("click", handlesubmitbtn);
 
-const handleHideShowbtn =()=>{
-console.log("hello");
-ishide = !ishide;
-if(ishide){
-    container.style.display="none";
-    container.innerText ="heyyy evryone welcomeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee";
+function handlename (event){
+    loginData.name = event.target.value;
+    console.log(loginData.name);
+};
 
-}else{
-    container.style.display="block";
+function handlepassword (event){
+loginData.password = event.target.value;
+console.log(loginData.password);
 
-}
-}
+};
 
-hideshowbtn.addEventListener("click", handleHideShowbtn);
+function handlesubmitbtn (){
+console.log(loginData);
+};
+

@@ -10,10 +10,10 @@
     <header class="header">
         <nav>
             <ul>
-                <li onclick=HandleFirstTab() id="first"><a href="#">First Tab</a></li>
-                <li id="second"><a href="#">Second Tab</a></li>
-                <li id="third"><a href="#">Third Tab</a></li>
-                <li id="four"><a href="#">Fourth Tab</a></li>
+                <li onclick=HandleFirstTab() id="first-tab"><a href="#">First Tab</a></li>
+                <li id="second-tab"><a href="#">Second Tab</a></li>
+                <li id="third-tab"><a href="#">Third Tab</a></li>
+                <li id="fourth-tab"><a href="#">Fourth Tab</a></li>
 
             </ul>
         </nav>
@@ -24,8 +24,18 @@
              vero ea. Nostrum recusandae debitis minima modi cupiditate nemo!</p>
     </section>
     <section style="display: flex; align-items: center; justify-content: center;">
-        <div class="tab-content-section">
+        <div style="background-color: black; color: aliceblue;" id="first"  class="tab-content-section display-none">
             <p id="first-Tab-text">This is First Tab content section</p>
+        </div>
+
+        <div style="background-color: rgb(123, 102, 102); color: aliceblue;" id="second"  class="tab-content-section display-none">
+            <p id="second-Tab-text">This is second Tab content section</p>
+        </div>
+        <div style="background-color: rgb(92, 62, 62); color: aliceblue;" id="third" class="tab-content-section display-none">
+            <p id="third-Tab-text">This is Third Tab content section</p>
+        </div>
+        <div style="background-color: rgb(108, 27, 27); color: aliceblue;" id="forth"  class="tab-content-section display-none">
+            <p id="fourth-Tab-text">This is Fourth Tab content section</p>
         </div>
     </section>
     <section>
