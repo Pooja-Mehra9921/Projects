@@ -4,13 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restricted Textarea</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        .textarea{
+            border-radius: 10px;
+            height: 100px;
+            width: 200px;
+            padding: 10px;
+            resize: none;
+            border: 0.5px solid black;
+        }
+
+        .number-container{
+            display: flex;
+        }
+
+        .display-none{
+            display: none;
+           
+        }
+
+        .error-message{
+            color: red;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Write Your Message</h1>
-   <textarea name="Write Your Message" id="text-area" placeholder="text here...." rows="5" cols="50" style="border-radius:25px;">
-        
-   </textarea>
+    <div class="main-container">
+        <h3>Write Your Message</h3>
+        <p class="error-message display-none">oppss!! please enter character between 0 and 20</p>
+
+        <div class="text-container">
+
+            <textarea name="textarea" id="text-area" class="textarea" placeholder="text here.."></textarea>
+
+        </div>
+        <div class="number-container">
+            <p id="change-number">0</p>
+            <p id="fixed-number">/20</p>
+        </div>
+    </div>
+
+
     <script src="script.js"></script>
 </body>
 </html>
