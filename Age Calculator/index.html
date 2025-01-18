@@ -10,9 +10,22 @@
     
 <div class="main-container">
     <div class="conatiner">
-        <h1>Age Calculator</h1>
-        <p>Enter your birth date:</p>
-        <input type="date">
+        <div>
+            <h1 class="text-align" style="font-weight: 600; font-size: 18px;">Age Calculator</h1>
+            <p class="text-align">Enter your birth date:</p>
+            <input class="input-fieled" id="date-field" type="date">
+<p style="color: red;" class="error">Please select your valid date</p>
+
+            <button class="btn" id="calbtn">Calculate</button>
+            <p class="text-align">You are 
+                <span id="yearNumber">0</span> 
+                years 
+                <span id="monthNumber">0</span> 
+                months and 
+                <span id="dayNumber">0</span> 
+                days old</p>
+        
+        </div>
     </div>
 </div>
     <script src="script.js"></script>
