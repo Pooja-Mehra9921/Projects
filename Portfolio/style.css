@@ -13,7 +13,6 @@ body {
 }
 .main-container {
   width: 80%;
-  background-color: red;
 }
 
 .navbar {
@@ -39,3 +38,47 @@ body {
 .btn:hover {
   cursor: pointer;
 }
+
+.homesection{
+    height: 300px;
+    margin-top: 80px;
+}
+
+
+.cvBtn{
+    height: 50px;
+    width: 160px;
+    border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.258);
+color: white;
+border: 3px solid #3c0a45;
+font-size: 15px;
+}
+.sec{
+    width: 50%;
+}
+
+.homecontainer {
+  display: flex;
+}
+
+
+.image-container{
+border: 3px solid #b9a9bc;
+    height: 300px;
+    width: 400px;
+   box-shadow: 2px 2px 40px white;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 316px;
+    border-bottom-left-radius: 362px;
+    border-bottom-right-radius: 328px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://img.freepik.com/premium-photo/3d-illustration-female-graphic-designer-character-holding-tablet_984354-600.jpg?w=360);
+   
+    
+}
+
