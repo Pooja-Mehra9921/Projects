@@ -1,9 +1,7 @@
 const inputdate = document.querySelector("#date-field");
 const calculate = document.querySelector("#calbtn");
-const day = document.querySelector("#dayNumber");
-const month = document.querySelector("#monthNumber");
-const year = document.querySelector("#yearNumber");
 const errorMessage = document.querySelector(".error")
+const result = document.querySelector(".result");
 
 
 calculate.addEventListener("click", handlecalculateAge);
@@ -12,56 +10,41 @@ function handlecalculateAge(){
     console.log("calculate agee-------");
 
     const inputValue = new Date(inputdate.value);
-    console.log("--------", inputValue.toLocaleString());
+    const todayDate = new Date();
 
-// input date values
 
-    const indate = inputValue.getDate();
-    const inmonth = inputValue.getMonth();
-    const inyear = inputValue.getFullYear();
-
-// cuurent date values
-
-    const currentDate = new Date();
-    console.log("--------", currentDate.toLocaleString());
-
-    const currentdate = currentDate.getDate();
-    const currentmonth = currentDate.getMonth();
-    const currentyear = currentDate.getFullYear();
 
 
 //results 
 
-const finaldate = currentdate - indate;
-console.log("=================",finaldate);
+let finaldate = todayDate.getDate() - inputValue.getDate();
+let finalMonth = todayDate.getMonth() - inputValue.getMonth();
+let finalyear = todayDate.getFullYear() - inputValue.getFullYear();
 
-const finalMonth = currentmonth - inmonth;
-console.log("=================",finalMonth);
-
-const finalyear = currentyear - inyear;
-console.log("=================",finalyear);
-
-
-    if(inputdate.value == ""){
-        errorMessage.style.display = "block" ;
-        console.error("please enter your date");
-
-
-
-    } else if(inputdate.value !== ""){
-        console.log("this is currect");
-        errorMessage.style.display = "none" ;
-        day.innertext = finaldate;
-        month.innertext = finalMonth;
-        year.innertext = finalyear;
-
-
-    }else{
-console.log("-----------something went wrong");
-    }
+if (!inputdate.value) {
+    // Show error if no date is entered
+    errorMessage.style.display = "block";
+    errorMessage.textContent = "Please enter your date of birth.";
+    result.textContent = ""; 
+    return;
+  } else {
+    errorMessage.style.display = "none"; 
+  }
 
   
-    
+  if (finaldate < 0) {
+    finalMonth--; // Borrow days from the previous month
+    finaldate += new Date(todayDate.getFullYear(), todayDate.getMonth(), 0).getDate();
+  }
+
+  if (finalMonth < 0) {
+    finalyear--; // Borrow months from the previous year
+    finalMonth += 12;
+  }
+
+  // Display the result
+  result.textContent = `You are ${finalyear} years, ${finalMonth} months, and ${finaldate} days old.`;
+
 
 }
 
