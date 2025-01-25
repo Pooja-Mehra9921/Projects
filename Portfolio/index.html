@@ -5,33 +5,208 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="main-container">
       <nav class="navbar">
         <p style="font-size: 20px; margin: 15px">Portfolio</p>
         <div class="menu-btn">
-          <button class="btn">Home</button>
-          <button class="btn">Projects</button>
-          <button class="btn">Skills</button>
-          <button class="btn">About</button>
-          <button class="btn">Contact</button>
+          <div class="btn"><a href="#home">Home</a></div>
+          <div class="btn"><a href="#about">About</a></div>
+          <div class="btn"><a href="#skill">Skills</a></div>
+          <div class="btn"><a href="#">Projects</a></div>
+          <div class="btn"><a href="#">Contact</a></div>
         </div>
       </nav>
-      <section class="homesection">
+      <section class="homesection" id="home">
         <div class="homecontainer">
-            <div class="home-left sec">
-                <p style="font-size: 80px; font-weight: 400;">Frontend Developer</p>
-                <p style="margin: 30px auto; font-size: 20px;">I am Pooja - Web Developer with a passion for creating beautiful and responsive websites</p>
-                <button class="cvBtn">Download CV</button>
+          <div class="home-left sec">
+            <p style="font-size: 80px; font-weight: 400">Frontend Developer</p>
+            <p style="margin: 30px auto; font-size: 20px">
+              I am Pooja - Web Developer with a passion for creating beautiful
+              and responsive websites
+            </p>
+            <button class="cvBtn">Download CV</button>
+            <div class="social-media-icons">
+              <a href="https://www.instagram.com/pooja_m9921/"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a href="https://github.com/Pooja-Mehra9921"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/pooja-mehra-1060b7260/"
+                ><i class="bx bxl-linkedin-square"></i
+              ></a>
             </div>
-            <div class="home-right sec" style="display: flex; align-items: center; justify-content: center;">
-                <div class="image-container">
-                </div>
-            </div>
+          </div>
+          <div
+            class="home-right sec"
+            style="display: flex; align-items: center; justify-content: center"
+          >
+            <div class="image-container"></div>
+          </div>
         </div>
       </section>
 
+      <section id="about">
+        <div class="about-container">
+          <div class="about-left sec">
+            <div class="img-main-container">
+              <div class="image-container"></div>
+            </div>
+          </div>
+          <div
+            style="margin: auto 30px; margin-left: 60px"
+            class="about-right sec"
+          >
+            <h1
+              style="
+                margin: 20px auto;
+                font-size: 60px;
+                text-shadow: 0px 0px 10px white;
+              "
+            >
+              About me
+            </h1>
+            <p
+              style="
+                margin: 20px auto;
+                font-size: 20px;
+                font-weight: 600;
+                color: #b9a9bc;
+              "
+            >
+              Pooja Mehra - Frontend Developer
+            </p>
+            <p style="text-align: justify">
+              I am a passionate Frontend Developer and Freelancer, dedicated to
+              crafting responsive and user-friendly web experiences. With 2
+              years of experience as an Associate Designer, I’ve honed my skills
+              in delivering visually appealing and functional designs.
+            </p>
+            <p style="margin-top: 10px; text-align: justify">
+              From sleek website interfaces to dynamic user interactions, I
+              specialize in creating solutions that combine creativity and
+              technical expertise. Whether working with clients as a freelancer
+              or contributing to innovative projects, I bring dedication,
+              attention to detail, and a commitment to excellence. <br />
+              <br />Let’s connect to bring your ideas to life!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills section-->
+
+      <section id="skill">
+        <div class="skill-container">
+          <h1 style="
+          text-align: center;
+          margin: 20px auto;
+          font-size: 60px;
+          text-shadow: 0px 0px 10px white;
+        ">Skills & Expertise</h1>
+          <div class="skills-content">
+            <div class="skill-box">
+              <div class="icon-section">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <i
+                    class="bx bxl-html5"
+                    style="
+                      text-align: center;
+                      margin-top: 5px;
+                      font-size: 50px;
+                    "
+                  ></i>
+                </div>
+
+                <p
+                  style="
+                    text-align: center;
+                    margin: 10px auto;
+                    font-size: 20px;
+                    font-weight: 600;
+                  "
+                >
+                  HTML5
+                </p>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="icon-section">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <i
+                  class='bx bxl-css3'
+                    style="
+                      text-align: center;
+                      margin-top: 5px;
+                      font-size: 50px;
+                    "
+                  ></i>
+                </div>
+
+                <p
+                  style="
+                    text-align: center;
+                    margin: 10px auto;
+                    font-size: 20px;
+                    font-weight: 600;
+                  "
+                >
+                  CSS
+                </p>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="icon-section">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <i
+                class='bx bxl-javascript'
+                    style="
+                      text-align: center;
+                      margin-top: 5px;
+                      font-size: 50px;
+                    "
+                  ></i>
+                </div>
+
+                <p
+                  style="
+                    text-align: center;
+                    margin: 10px auto;
+                    font-size: 20px;
+                    font-weight: 600;
+                  "
+                >
+                  Javascript
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <script src="index.js"></script>
