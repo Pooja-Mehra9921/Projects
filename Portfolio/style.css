@@ -38,7 +38,7 @@ body {
   justify-content: center;
 }
 
-.main-container .navbar .menu-btn a {
+a {
   color: white;
   text-decoration: none;
 }
@@ -163,28 +163,108 @@ body {
 /* skills section*/
 
 .skill-container{
-  margin: 120px auto;
+  margin-top: 20px;
+  position: relative;
+  padding-top: 100px;
+  
 }
 
 .skills-content{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  height: 100px;
 
 }
 
+.section-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 900px;
+}
+
 .skill-box{
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0px 0px 10px white;
   border-radius: 50%;
-  padding: 80px;
+  padding: 50px;
 }
 
 .icon-section{
-  height: 100px;
-  width: 120px;
+  height: 80px;
+  width: 80px;
+}
+
+.skill-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-image-container{
+  background-image: url(./images/skill.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  margin-top: 10px;
+
+}
+/* Contact Section*/
+
+.contact-section{
+padding-top: 80px;
+
+}
+
+.form-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 90px auto;
+
+}
+
+input{
+  margin: 5px auto;
+  background-color: #3c0a45;
+  border: none;
+  height: 30px;
+  color: white;
+  padding: 5px;
+}
+
+#write-message{
+  background-color: #3c0a45;
+  height: 80px;
+  color: white;
+  padding: 5px;
+resize: none;
+}
+
+#name, #email, #write-message{
+  width: 400px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+#send-btn{
+  height: 40px;
+  width: 400px;
+  font-size: 20px;
+  background-color: #3c0a45;
+  color: white;
+  border: 2px solid #b9a9bc;
+  cursor: pointer;
+}
+
+.form-section{
+  padding: 30px;
+  border: 1px solid white;
+  margin-bottom: 20px;
+
 }
