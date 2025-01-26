@@ -1,35 +1,34 @@
-const userName = document.querySelector("#name");
-const email = document.querySelector("#email");
-const message = document.querySelector("#write-message");
-const send = document.querySelector("#send-btn");
-
-console.log("---------name", userName);
-console.log("---------email", email);
-
 const user={
     name:"",
     email:"",
     message:""
 };
 
-userName.addEventListener("input", handlename);
-email.addEventListener("input", handleemail);
-message.addEventListener("input", handlemessage);
-send.addEventListener("click", handlesubmit);
+const handleSubmitBtn=()=>{
+   
 
-function handlename(e){
-console.log("---name",e.target.value);
+    let userName = document.getElementById("user-name").value;
+    let userEmail = document.getElementById("email").value;
+    let userMessage = document.getElementById("write-message").value;
+
+console.log("name-------------",userName);
+console.log("email-------------",userEmail);
+console.log("Mesaage-------------",userMessage);
+
+if(!userName || !userEmail || !userMessage){
+    let errorElement = document.getElementsByClassName("error-div");
+    errorElement.innerHTML = `<p style="color:red;">Please fill all filels</p>`;
 }
 
-function handleemail(e){
-    console.log("---name",e.target.value);
+    if(userName && userEmail && userMessage){
+        console.log("message send--");
+        user.name = userName;
+        user.email = userEmail;
+        user.message = userMessage;
+
+    }else{
+        console.warn("please enteter all fields--");
     }
 
-    function handlemessage(e){
-        console.log("---name",e.target.value);
-        }
-    function handlesubmit(){
-        let user = userName.value;
-        console.log("--------",user);
-        console.log("clickessss");
-    }
+};
+

@@ -252,7 +252,7 @@ resize: none;
   margin-bottom: 20px;
   margin-top: 5px;
 }
-#send-btn{
+.send-btn{
   height: 40px;
   width: 400px;
   font-size: 20px;
@@ -267,4 +267,12 @@ resize: none;
   border: 1px solid white;
   margin-bottom: 20px;
 
+}
+
+
+.error{
+  display: block;
+  color: red;
+  font-size: 12px;
+margin-bottom: 10px;  
 }
