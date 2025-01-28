@@ -107,7 +107,7 @@ a {
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("./images/portfolioImage.png");
+  background-image: url("./images/portfolioimage.png");
 }
 
 .about {
@@ -488,4 +488,165 @@ width: 100%;
     display: flex;
     justify-content: center;
   }
+}
+
+
+/* For screens bigger than 1200px (large tablets and small desktops) */
+@media (min-width: 1200px) {
+  .main-container {
+    width: 80%;
+  }
+  .navbar {
+    height: auto;
+    margin: 20px auto;
+    border-radius: 50px;
+
+  }
+  .menu-btn .btn {
+    margin: 10px 10px;
+    width: 100px;
+  }
+  .homecontainer {
+    padding-top: 210px;
+  }
+  .sec {
+    width: 50%;
+    margin: 50px auto;
+  }
+
+  .home-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cvBtn {
+    width: 180px;
+    height: 60px;
+    font-size: 14px;
+  }
+
+  .image-container{
+    height: 400px;
+    width: 500px;
+
+  }
+.about-left{
+  margin-bottom: 20px;
+}
+  .about-container{
+    padding-top: 190px;
+    padding-bottom: 190px;
+  }
+  .aboutme-text{
+text-align: center; 
+background-color: #160120;
+font-size: 20px;
+width: 100%;
+}
+.about-title{
+  text-align: center;
+}
+
+.img-main-container{
+  background-color: #b9a9bc;
+  width: 420px;
+}
+
+
+.skill-container{
+  padding-top: 150px;
+  height: 900px;
+}
+.section-container{
+  width: 80%;
+}
+
+.skill-image-container{
+  background-image: url(./images/skill.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 250px;
+  margin: 30px;
+}
+
+.skill-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.skill-title{
+  margin: 20px;
+  font-size: 30px;
+}
+
+.section-container{
+  margin-top: 60px;
+  position: relative;
+  padding: 10px;
+}
+.skill-box{
+  margin: 20px;
+}
+.contact-section{
+  padding: 100px;
+}
+
+}
+
+/* Contact Section*/
+
+.contact-section {
+  padding-top: 80px;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 90px auto;
+ 
+}
+
+input {
+  margin: 10px auto;
+  background-color: #3c0a45;
+  border: none;
+  height: 40px;
+  color: white;
+  padding: 5px;
+  width: 600px;
+}
+
+#write-message {
+  background-color: #3c0a45;
+  height: 80px;
+  color: white;
+  padding: 5px;
+  resize: none;
+}
+
+#name,
+#email,
+#write-message {
+  width: 600px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.send-btn {
+  height: 50px;
+  width: 100%;
+  font-size: 20px;
+  background-color: #3c0a45;
+  color: white;
+  border: 2px solid #b9a9bc;
+  cursor: pointer;
+}
+
+.form-section {
+  padding: 30px;
+  border: 1px solid white;
+  margin-bottom: 20px;
+  height: 600px;
 }

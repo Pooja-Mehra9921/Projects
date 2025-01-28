@@ -385,28 +385,34 @@
       text-align: center;
       text-shadow: 0px 0px 10px white;
     ">Contact</h1>
-    <form class="form-container">
-      <div class="form-section" >
+
+
+      <form id="contact-form" class="form-container">
+
+           <div class="form-section" >
         
           <label for="name">Your Name</label><br>
+          <!-- name input-->
           <input  type="text" id="user-name"><br>
           <div class="error-div" > </div>
      
-        
-  <label for="email">Your Email</label><br>
-        <input type="email" id="email"><br>
+         <!-- email input-->
+          <label for="email">Your Email</label><br>
+          <input type="email" id="user-email"><br>
 
         
-
-        <label for="message" >Your Message</label><br>
-        <textarea  name="message" id="write-message"></textarea>
+ <!-- textarea input-->
+          <label for="message" >Your Message</label><br>
+          <textarea  name="message" id="write-message"></textarea>
         
-
-<div class="sumbit-btn-container">
-  <button onclick="handleSubmitBtn()" class="send-btn">Send</button>
-</div>
+          <p class="error-message"></p>
+ <!-- submit btn-->
+        <div class="sumbit-btn-container">
+        <button id="submit-btn" class="send-btn">Send</button>
+        </div>
       
-
+        <div id="error-container" style="color: red; display: none; margin-top: 10px;"></div>
+        <div id="success-container" style="color: rgb(255, 255, 255); display: none; margin-top: 20px;"></div>
       </div>
     </form>
     </div>
