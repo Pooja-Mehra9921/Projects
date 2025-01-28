@@ -305,13 +305,11 @@ input {
   }
   .aboutme-text{
 text-align: center; 
-background-color: #160120;
 font-size: 20px;
 width: 100%;
 }
 .about-title{
   text-align: center;
-  background-color: black;
 }
 
 .img-main-container{
@@ -345,7 +343,7 @@ width: 100%;
   margin: 20px;
 }
 .contact-section{
-  padding: 100px;
+  padding: 0px;
 }
 
 }
@@ -389,6 +387,8 @@ width: 100%;
   .skill-box {
     margin: 10px;
     padding: 30px;
+    height: 110px;
+    width: 110px;
   }
   .skill-image-container {
     height: 100px;
@@ -399,16 +399,20 @@ width: 100%;
 /* For screens smaller than 768px (large mobiles and small tablets) */
 @media (max-width: 768px) {
   .navbar {
-    width: 100%;
-    padding: 10px;
+    padding: 10px;  
+    width: 80%;
+  }
+
+  .menu-btn {
+    margin: auto 40px !important;
   }
   .menu-btn .btn {
     margin: 5px;
-    width: 80px;
+    width: 70px;
     font-size: 12px;
   }
   .homecontainer {
-    padding-top: 5%;
+    padding: 15% auto;
   }
   .cvBtn {
     width: 120px;
@@ -416,18 +420,86 @@ width: 100%;
   }
   .skills-content {
     flex-direction: column;
+
+  }
+
+  .skill-heading{
+    margin-top: 10px !important;
+  }
+
+  .skill-title{
+    margin-bottom: 10px !important;
   }
   .section-container {
     width: 100%;
+    margin-top: 360px;
   }
   .skill-box {
-    width: 50px;
-    height: 50px;
+    width: 110px;
+    height: 110px;
     padding: 20px;
   }
   .icon-section i {
     font-size: 30px;
   }
+/* Contact Section*/
+
+.contact-section {
+  padding-top: 80px;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 90px auto;
+ 
+}
+
+input {
+  margin: 10px auto;
+  background-color: #3c0a45;
+  border: none;
+  height: 40px;
+  color: white;
+  padding: 5px;
+}
+
+#user-name, #user-email, #write-message{
+  width: 400px !important; 
+}
+
+#write-message {
+  background-color: #3c0a45;
+  height: 80px;
+  color: white;
+  padding: 5px;
+  resize: none;
+}
+
+#name,
+#email,
+#write-message {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.send-btn {
+  height: 50px;
+  font-size: 20px;
+  background-color: #3c0a45;
+  color: white;
+  border: 2px solid #b9a9bc;
+  cursor: pointer;
+}
+
+.form-section {
+  padding: 30px;
+  border: 1px solid white;
+  margin-bottom: 20px;
+  height: 500px;
+}
+
+
 }
 
 /* For screens smaller than 576px (mobile phones) */
@@ -440,14 +512,18 @@ width: 100%;
     flex-direction: column;
     height: auto;
     padding: 5px;
+    width: 85%;
+  }
+  .menu-btn{
+    width: 90%;
   }
   .menu-btn .btn {
-    margin: 2px auto;
-    width: 100%;
+    margin: 18px auto;
+    width: 80px;
   }
   .homecontainer {
     flex-direction: column;
-    padding: 10px;
+    padding: 20px auto;
   }
   .home-left p:first-child {
     font-size: 50px;
@@ -469,8 +545,11 @@ width: 100%;
     width: 250px;
   }
   .skill-box {
-    margin: 5px;
+    margin: 10px;
     padding: 15px;
+    height: 90px;
+    width: 90px;
+    
   }
   .skill-image-container {
     height: 80px;
@@ -488,6 +567,17 @@ width: 100%;
     display: flex;
     justify-content: center;
   }
+.skill-heading{
+  margin-top: 60px !important;
+}
+
+.section-container{
+  margin-top: 190px;
+}
+
+.contact-section{
+  height: 800px;
+}
 }
 
 
