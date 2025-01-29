@@ -1,4 +1,4 @@
-const questions = [
+export const data = [
   {
     id: 0,
     question: "what is the difference between var, let, const?",

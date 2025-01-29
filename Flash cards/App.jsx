@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { Line } from "rc-progress";
-import Card from "./component/Card";
-import Questions from "../Flash cards/Users"
 
 
+
+
+const data = [
+  {question:"what is javascript", anser:""}
+]
 
 const App = () => {
 
@@ -40,9 +43,10 @@ const handlepercentage = () => {
             />
             <div className="question-numbers">{percentage}/20</div>
           </div>
-{Questions.map((e, index)=>{
-    return <Card key={index} question = {e.question} answer ={e.answer} />;
-})};
+
+<div className="card-container">
+
+</div>
           
 
 
