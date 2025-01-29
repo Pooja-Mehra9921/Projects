@@ -1,20 +1,14 @@
-.card-content-conatiner {
-    border: 1px solid black;
-    margin: 20px;
-    border-radius: 20px;
-    padding: 5px;
-    height: 300px;
-  
-  }
-  
-  .card{
-      border: 1px solid black;
-      height: 260px;
-    border-radius: 20px;
-    margin: 5px;
-    background-color: rgb(219, 219, 219);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-  }
+*{
+  margin: 0;
+  padding: 0;
+}
+.main-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container .container{
+  border: 1px solid black;
+  width: 50%;
+  margin: 10% auto;
+}
