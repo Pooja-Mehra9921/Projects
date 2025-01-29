@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.main-container{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.main-container .container{
+    border: 1px solid black;
+    margin: 10% auto;
+}
+
+.dropdown-btn{
+    background-color: purple;
+    height: 30px;
+    width: 200px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+ul li{
+    list-style: none;
+   
+}
+
+.options{
+    background-color: red;
+    border: 9x solid black;
+    margin: 10px;
+}
