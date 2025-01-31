@@ -1,28 +1,31 @@
 const dropdownBtn = document.getElementById("dropdownBtn");
 const dropdownOptions = document.getElementById("dropdown-options");
-const options = document.getElementsByClassName("options");
+const list = document.querySelector(".dropdown-list");
 
-console.log("optionsssss", options);
+let show = false;  
 
 
-function changeHtml(option){
-console.log("optionsssss", option);
-}
+const handleSelectedBtn = () => {
+    console.log("Dropdown clicked");
+    show = !show;
+    dropdownOptions.style.display = show ? "block" : "none";
+};
 
-options.forEach(option => {
-    changeHtml(option);
+
+list.addEventListener("click", (event) => {
+    if (event.target.tagName === "LI") {  
+        dropdownBtn.textContent = event.target.textContent;
+        console.log("Selected item:", event.target.textContent);
+        
+        dropdownOptions.style.display = "none"; 
+        show = false; 
+    }
 });
 
-dropdownBtn.addEventListener("click", handleDropdownBtn);
 
-let optionShow = false;
-
-function handleDropdownBtn(){
-    optionShow = !optionShow
-    console.log("clickedddddddd");
-    if(optionShow){
-        dropdownOptions.style.display = "block";
-    }else{
+document.addEventListener("click", (event) => {
+    if (!dropdownBtn.contains(event.target) && !dropdownOptions.contains(event.target)) {
         dropdownOptions.style.display = "none";
+        show = false; 
     }
-}
+});

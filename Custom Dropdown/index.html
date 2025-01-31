@@ -10,7 +10,7 @@
     <div class="main-container">
       <div class="container">
         <div class="dropdown">
-          <button class="dropdown-btn" id="dropdownBtn">
+          <button class="dropdown-btn" id="dropdownBtn" onclick=handleSelectedBtn()>
 
             <span id="selected-item">Select Your Language</span>
             <span>
@@ -31,18 +31,14 @@
             </span>
           </button>
           <div id="dropdown-options">
-            <div class="options">First option</div>
-            <hr>
-            <div class="options">Second option</div>
-            <hr>
-            <div class="options">Third option</div>
-            <hr>
-            <div class="options">Fourth option</div>
-            <hr>
-            <div class="options">Fifth option</div>
-            <hr>
-            <div class="options">Sixth option</div>
-          </div>
+            <ul class="dropdown-list">
+<li class="option" data-value="option1">HTML</li>
+<li class="option" data-value="option2">CSS</li>
+<li class="option" data-value="option3">javascript</li>
+<li class="option" data-value="option4">node.js</li>
+<li class="option" data-value="option5">tailwind</li>
+<li class="option" data-value="option6">Mongodb</li>
+            </ul>
         </div>
       </div>
     </div>
